@@ -4,23 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test</title>
-    <meta property="og:title" content="">
-    <meta property="og:description" content="">
-    <meta property="og:url" content="">
-    <script>
-        function getUrlParameter(name) {
-            name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
-            var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
-            var results = regex.exec(location.search);
-            return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
-        };
-        var title = getUrlParameter('title');
-        var description = getUrlParameter('desc');
-        var url = window.location.href;
-        document.querySelector('meta[property="og:title"]').setAttribute("content", title);
-        document.querySelector('meta[property="og:description"]').setAttribute("content", description);
-        document.querySelector('meta[property="og:url"]').setAttribute("content", url);
-    </script>
 </head>
 <body>
    <h1>Test</h1>
